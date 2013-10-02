@@ -51,6 +51,8 @@ extern NSString *const UIApplicationDidReceiveMemoryWarningNotification;
 
 extern NSString *const UITrackingRunLoopMode;
 
+extern NSString *const UIApplicationSignificantTimeChangeNotification;
+
 typedef enum {
   UIStatusBarStyleDefault,
   UIStatusBarStyleBlackTranslucent,
@@ -61,7 +63,11 @@ typedef enum {
     UIInterfaceOrientationPortrait           = UIDeviceOrientationPortrait,
     UIInterfaceOrientationPortraitUpsideDown = UIDeviceOrientationPortraitUpsideDown,
     UIInterfaceOrientationLandscapeLeft      = UIDeviceOrientationLandscapeRight,
-    UIInterfaceOrientationLandscapeRight     = UIDeviceOrientationLandscapeLeft
+    UIInterfaceOrientationLandscapeRight     = UIDeviceOrientationLandscapeLeft,
+	
+	UIInterfaceOrientationMaskPortrait		 = UIDeviceOrientationPortrait | UIDeviceOrientationPortraitUpsideDown,
+	UIInterfaceOrientationMaskLandscape		 = UIDeviceOrientationLandscapeLeft | UIDeviceOrientationLandscapeRight,
+	UIInterfaceOrientationMaskAll			 = UIDeviceOrientationPortrait | UIDeviceOrientationPortraitUpsideDown | UIDeviceOrientationLandscapeLeft | UIDeviceOrientationLandscapeRight,
 } UIInterfaceOrientation;
 
 #define UIInterfaceOrientationIsPortrait(orientation) \

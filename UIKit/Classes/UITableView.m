@@ -694,6 +694,10 @@ const CGFloat _UITableViewDefaultRowHeight = 43;
     return nil;
 }
 
+- (id)dequeueReusableCellWithIdentifier:(NSString *)identifier forIndexPath:(NSIndexPath *)indexPath {
+	return [self dequeueReusableCellWithIdentifier:identifier];
+}
+
 - (void)setEditing:(BOOL)editing animated:(BOOL)animate
 {
     _editing = editing;

@@ -144,6 +144,7 @@ typedef enum {
 - (NSArray *)indexPathsForVisibleRows;
 - (NSArray *)visibleCells;
 - (UITableViewCell *)dequeueReusableCellWithIdentifier:(NSString *)identifier;
+- (id)dequeueReusableCellWithIdentifier:(NSString *)identifier forIndexPath:(NSIndexPath *)indexPath;
 - (UITableViewCell *)cellForRowAtIndexPath:(NSIndexPath *)indexPath;
 
 - (CGRect)rectForSection:(NSInteger)section;

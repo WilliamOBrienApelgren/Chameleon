@@ -276,6 +276,10 @@
 		38615C78133A81B900841EEA /* UIFont+UIPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 38615C77133A81B900841EEA /* UIFont+UIPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		38E523B11339680400E041B3 /* UINavigationItem+UIPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 38E523AF1339680400E041B3 /* UINavigationItem+UIPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		38E523B513396B5B00E041B3 /* UINavigationBar+UIPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 38E523B413396B5B00E041B3 /* UINavigationBar+UIPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		40F87E7317FC81C400E79715 /* UIStoryboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 40F87E7117FC81C400E79715 /* UIStoryboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40F87E7417FC81C400E79715 /* UIStoryboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F87E7217FC81C400E79715 /* UIStoryboard.m */; };
+		40F87E7717FC826100E79715 /* UIStoryboardSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 40F87E7517FC826100E79715 /* UIStoryboardSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40F87E7817FC826100E79715 /* UIStoryboardSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F87E7617FC826100E79715 /* UIStoryboardSegue.m */; };
 		537472D5133ADD4B00EBD5EA /* UIInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 537472D3133ADD4B00EBD5EA /* UIInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		537472D6133ADD4B00EBD5EA /* UIInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 537472D4133ADD4B00EBD5EA /* UIInterface.m */; };
 		7011107C133BE0F400C86512 /* UIDatePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 7011107A133BE0F300C86512 /* UIDatePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -573,6 +577,10 @@
 		38615C77133A81B900841EEA /* UIFont+UIPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+UIPrivate.h"; sourceTree = "<group>"; };
 		38E523AF1339680400E041B3 /* UINavigationItem+UIPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+UIPrivate.h"; sourceTree = "<group>"; };
 		38E523B413396B5B00E041B3 /* UINavigationBar+UIPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+UIPrivate.h"; sourceTree = "<group>"; };
+		40F87E7117FC81C400E79715 /* UIStoryboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIStoryboard.h; sourceTree = "<group>"; };
+		40F87E7217FC81C400E79715 /* UIStoryboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIStoryboard.m; sourceTree = "<group>"; };
+		40F87E7517FC826100E79715 /* UIStoryboardSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIStoryboardSegue.h; sourceTree = "<group>"; };
+		40F87E7617FC826100E79715 /* UIStoryboardSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIStoryboardSegue.m; sourceTree = "<group>"; };
 		537472D3133ADD4B00EBD5EA /* UIInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIInterface.h; sourceTree = "<group>"; };
 		537472D4133ADD4B00EBD5EA /* UIInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIInterface.m; sourceTree = "<group>"; };
 		7011107A133BE0F300C86512 /* UIDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDatePicker.h; sourceTree = "<group>"; };
@@ -820,6 +828,10 @@
 				78CB48D8133AB920008636DA /* UISlider.m */,
 				1489854712EE2CFE003D4751 /* UISplitViewController.h */,
 				1489854812EE2CFE003D4751 /* UISplitViewController.m */,
+				40F87E7117FC81C400E79715 /* UIStoryboard.h */,
+				40F87E7217FC81C400E79715 /* UIStoryboard.m */,
+				40F87E7517FC826100E79715 /* UIStoryboardSegue.h */,
+				40F87E7617FC826100E79715 /* UIStoryboardSegue.m */,
 				1489854912EE2CFE003D4751 /* UIStringDrawing.h */,
 				1489854A12EE2CFE003D4751 /* UIStringDrawing.m */,
 				1489860412EE2DBD003D4751 /* UISwipeGestureRecognizer.h */,
@@ -1000,6 +1012,7 @@
 				78D533DD133A9434006F17CA /* UISearchDisplayController.h in Headers */,
 				78CB48AC133A9C51008636DA /* UISearchBar.h in Headers */,
 				1489856A12EE2CFF003D4751 /* AppKitIntegration.h in Headers */,
+				40F87E7317FC81C400E79715 /* UIStoryboard.h in Headers */,
 				1489856B12EE2CFF003D4751 /* NSIndexPath+UITableView.h in Headers */,
 				1489856D12EE2CFF003D4751 /* UIAcceleration.h in Headers */,
 				1489856F12EE2CFF003D4751 /* UIAccelerometer.h in Headers */,
@@ -1039,6 +1052,7 @@
 				148985A912EE2CFF003D4751 /* UILongPressGestureRecognizer.h in Headers */,
 				148985AB12EE2CFF003D4751 /* UIMenuController.h in Headers */,
 				148985AD12EE2CFF003D4751 /* UIMenuItem.h in Headers */,
+				40F87E7717FC826100E79715 /* UIStoryboardSegue.h in Headers */,
 				148985AF12EE2CFF003D4751 /* UINavigationBar.h in Headers */,
 				148985B112EE2CFF003D4751 /* UINavigationController.h in Headers */,
 				1490AFE01219C31C00774286 /* UIPopoverController+UIPrivate.h in Headers */,
@@ -1153,7 +1167,7 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0500;
 			};
 			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "UIKit" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1251,6 +1265,7 @@
 				1489856E12EE2CFF003D4751 /* UIAcceleration.m in Sources */,
 				1489857012EE2CFF003D4751 /* UIAccelerometer.m in Sources */,
 				1489857212EE2CFF003D4751 /* UIAccessibility.m in Sources */,
+				40F87E7817FC826100E79715 /* UIStoryboardSegue.m in Sources */,
 				1489857412EE2CFF003D4751 /* UIAccessibilityElement.m in Sources */,
 				1489857612EE2CFF003D4751 /* UIActionSheet.m in Sources */,
 				1489857912EE2CFF003D4751 /* UIActivityIndicatorView.m in Sources */,
@@ -1302,6 +1317,7 @@
 				78D533DE133A9434006F17CA /* UISearchDisplayController.m in Sources */,
 				148985DC12EE2CFF003D4751 /* UITapGestureRecognizer.m in Sources */,
 				148985DE12EE2CFF003D4751 /* UITextField.m in Sources */,
+				40F87E7417FC81C400E79715 /* UIStoryboard.m in Sources */,
 				148985E112EE2CFF003D4751 /* UITextView.m in Sources */,
 				148985E312EE2CFF003D4751 /* UIToolbar.m in Sources */,
 				148985E512EE2CFF003D4751 /* UITouch.m in Sources */,
@@ -1343,6 +1359,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1365,6 +1382,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1384,7 +1402,6 @@
 		1DEB91B208733DA50010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
@@ -1399,7 +1416,6 @@
 		1DEB91B308733DA50010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;

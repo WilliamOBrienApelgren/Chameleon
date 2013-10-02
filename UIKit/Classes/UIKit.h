@@ -108,6 +108,8 @@
 #import "UISwipeGestureRecognizer.h"
 #import "UIDatePicker.h"
 #import "UIAppearance.h"
+#import "UIStoryboard.h"
+#import "UIStoryboardSegue.h"
 
 // non-standard imports
 #import "UIKey.h"

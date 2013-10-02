@@ -30,6 +30,7 @@
 #import "UIResponder.h"
 #import "UIWindow+UIPrivate.h"
 #import "UIInputController.h"
+#import <objc/runtime.h>
 
 @implementation UIResponder
 
@@ -114,7 +115,7 @@
 
 - (BOOL)canPerformAction:(SEL)action withSender:(id)sender
 {
-    if ([isa instancesRespondToSelector:action]) {
+    if ([object_getClass(self) instancesRespondToSelector:action]) {
         return YES;
     } else {
         return [[self nextResponder] canPerformAction:action withSender:sender];

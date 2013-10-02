@@ -32,6 +32,7 @@
 #import "UINavigationItem+UIPrivate.h"
 #import "UINavigationBar.h"
 #import "UINavigationBar+UIPrivate.h"
+#import <objc/runtime.h>
 
 static void * const UINavigationItemContext = "UINavigationItemContext";
 
@@ -90,13 +91,13 @@ static void * const UINavigationItemContext = "UINavigationItemContext";
     
     if (_navigationBar != nil && navigationBar == nil) {
         // remove observation
-        for (NSString * keyPath in [isa _keyPathsTriggeringUIUpdates]) {
+        for (NSString * keyPath in [object_getClass(self) _keyPathsTriggeringUIUpdates]) {
             [self removeObserver:self forKeyPath:keyPath];
         }
     }
     else if (navigationBar != nil) {
         // observe property changes to notify UI element
-        for (NSString * keyPath in [isa _keyPathsTriggeringUIUpdates]) {
+        for (NSString * keyPath in [object_getClass(self) _keyPathsTriggeringUIUpdates]) {
             [self addObserver:self forKeyPath:keyPath options:NSKeyValueObservingOptionNew context:UINavigationItemContext];
         }
     }

@@ -28,6 +28,7 @@
  */
 
 #import "UIAction.h"
+#import <objc/runtime.h>
 
 @implementation UIAction
 @synthesize target=_target, action=_action;
@@ -36,7 +37,7 @@
 {
     if (object == self) {
         return YES;
-    } else if ([object isKindOfClass:[isa class]]) {
+    } else if ([object isKindOfClass:[object_getClass(self) class]]) {
         return ([object target] == self.target && [object action] == self.action);
     } else {
         return NO;

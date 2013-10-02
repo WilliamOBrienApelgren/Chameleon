@@ -63,6 +63,9 @@ NSString *const UIApplicationDidReceiveMemoryWarningNotification = @"UIApplicati
 
 NSString *const UITrackingRunLoopMode = @"UITrackingRunLoopMode";
 
+NSString *const UIApplicationSignificantTimeChangeNotification = @"UIApplicationSignificantTimeChangeNotification";
+
+
 const UIBackgroundTaskIdentifier UIBackgroundTaskInvalid = NSUIntegerMax; // correct?
 const NSTimeInterval UIMinimumKeepAliveTimeout = 0;
 

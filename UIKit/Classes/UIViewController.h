@@ -88,6 +88,8 @@ typedef enum {
 
 - (void)presentModalViewController:(UIViewController *)modalViewController animated:(BOOL)animated;		// works, but not exactly correctly.
 - (void)dismissModalViewControllerAnimated:(BOOL)animated;												// see comments in dismissModalViewController
+- (void)presentViewController:(UIViewController *)viewControllerToPresent animated: (BOOL)flag completion:(void (^)(void))completion;
+- (void)dismissViewControllerAnimated:(BOOL)flag completion:(void (^)(void))completion;
 
 - (void)didReceiveMemoryWarning;	// doesn't do anything and is never called...
 

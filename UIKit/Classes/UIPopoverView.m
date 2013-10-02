@@ -31,6 +31,7 @@
 #import "UIImageView.h"
 #import "UIImage+UIPrivate.h"
 #import <QuartzCore/QuartzCore.h>
+#import <objc/runtime.h>
 
 typedef struct {
     CGPoint from;
@@ -164,8 +165,8 @@ static CGFloat DistanceBetweenTwoPoints(CGPoint A, CGPoint B)
     [super layoutSubviews];
 
     const CGRect bounds = self.bounds;	
-    _backgroundView.frame = [isa backgroundRectForBounds:bounds];
-    _contentContainerView.frame = [isa contentRectForBounds:bounds withNavigationBar:NO];
+    _backgroundView.frame = [object_getClass(self) backgroundRectForBounds:bounds];
+    _contentContainerView.frame = [object_getClass(self) contentRectForBounds:bounds withNavigationBar:NO];
     _contentView.frame = _contentContainerView.bounds;
 }
 
@@ -312,7 +313,7 @@ static CGFloat DistanceBetweenTwoPoints(CGPoint A, CGPoint B)
 - (void)setContentSize:(CGSize)aSize animated:(BOOL)animated
 {
     CGRect frame = self.frame;
-    frame.size = [isa frameSizeForContentSize:aSize withNavigationBar:NO];
+    frame.size = [object_getClass(self) frameSizeForContentSize:aSize withNavigationBar:NO];
 
     [UIView animateWithDuration:animated? 0.2 : 0
                      animations:^(void) {
